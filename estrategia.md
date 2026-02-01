@@ -1,151 +1,92 @@
-# Estrategia de Ciberseguridad 2026
-# Protección Unificada para una Empresa Diversificada en Nube Híbrida
+# 🛡️ Estrategia de Ciberseguridad 2026
+**Protección Unificada para una Empresa Diversificada en Nube Híbrida**
 
+---
 
-## Título: La Complejidad Híbrida
-## Subtítulo: Riesgos actuales en nuestro entorno diversificado
+## 📽️ Diapositiva 1: Portada
+# ESTRATEGIA CIBERSEGURIDAD 2026
+### PROTECCIÓN UNIFICADA // NUBE HÍBRIDA
+**Departamento de Tecnología y Transformación GFG**
 
-- Superficie de Ataque Expandida:
+---
 
-On-premise, AWS/Azure, y múltiples sedes de negocio.
+## 📽️ Diapositiva 2: El Desafío
+### ⚠️ EL DESAFÍO: COMPLEJIDAD HÍBRIDA
 
-- Visibilidad Fragmentada:
+* **Superficie Expandida:** La combinación de on-premise, AWS, Azure y múltiples sedes ha creado puntos ciegos críticos.
+* **Visibilidad Fragmentada:** Las herramientas aisladas (silos) impiden la correlación de datos y la detección rápida.
+* **Brechas de Cumplimiento:** Niveles de madurez inconsistentes entre unidades de negocio aumentan el riesgo regulatorio.
+* **Movimiento Lateral:** Alto riesgo de que un compromiso en una filial se propague al núcleo corporativo.
 
-Herramientas aisladas (silos) impiden la detección rápida de amenazas.
+---
 
-- Brechas de Cumplimiento:
+## 📽️ Diapositiva 3: Pilar 1 - Zero Trust
+### 🔒 PILAR 1: ARQUITECTURA ZERO TRUST
 
-Diferentes unidades de negocio con distintos niveles de madurez.
+| Componente | Acción Clave | Tecnologías Sugeridas |
+| :--- | :--- | :--- |
+| **Identidad (IAM)** | SSO y MFA obligatorio para todo acceso. | *Okta, Entra ID* |
+| **Micro-segmentación** | Aislamiento de cargas de trabajo críticas. | *Illumio* |
+| **Acceso Privilegiado** | Acceso Just-in-Time (JIT) para Admins. | *CyberArk* |
+| **Validación (ZTNA)** | Acceso seguro sin dependencia de VPN. | *Zscaler* |
 
-- Movimiento Lateral:
 
-Riesgo de que un ataque en una filial comprometa el núcleo corporativo.
 
+---
 
+## 📽️ Diapositiva 4: Pilar 2 - Email Security
+### 📧 PILAR 2: SEGURIDAD DE EMAIL
+**Protección contra el vector de ataque #1: Phishing y BEC.**
 
-## Título: Arquitectura Zero Trust
-## Subtítulo: Nunca confiar, siempre verificar (Identidad como Perímetro)
+* **Secure Email Gateway (SEG):** Filtrado avanzado de spam y malware. *(Proofpoint)*
+* **Protección API (Next-Gen):** IA para detectar fraudes internos y anomalías. *(Abnormal)*
+* **Autenticación de Dominio:** Implementación estricta de **DMARC, SPF y DKIM**.
+* **Concientización:** Simulaciones continuas para fortalecer el "Firewall Humano".
 
-Identidad Unificada (IAM/SSO):
+---
 
-SSO y MFA obligatorio para todos los accesos (Cloud + On-Prem).
+## 📽️ Diapositiva 5: Pilar 3 - Cloud Security
+### ☁️ PILAR 3: SEGURIDAD EN NUBE (CNAPP)
 
-Soluciones Líderes: Okta, Microsoft Entra ID (Azure AD), Ping Identity.
+1.  **Postura (CSPM):** Remediación automática de errores en AWS/Azure. *(Wiz)*
+2.  **Workloads (CWPP):** Seguridad en runtime para contenedores. *(Crowdstrike)*
+3.  **Gestión de Secretos:** Rotación automatizada de llaves y BYOK. *(HashiCorp Vault)*
+4.  **DevSecOps:** Análisis SAST integrado en el pipeline CI/CD. *(Snyk)*
 
-### Micro-segmentación:
+---
 
-Aislar cargas de trabajo críticas para evitar movimiento lateral.
+## 📽️ Diapositiva 6: Pilar 4 - SOC Moderno
+### ⚡ PILAR 4: SOC MODERNO (VISIBILIDAD)
 
-Soluciones Líderes: Illumio, Akamai Guardicore, Cisco Secure Workload.
+> **"No se puede proteger lo que no se puede ver."**
 
-### Acceso de Mínimo Privilegio (PAM):
+* **SIEM Híbrido:** Correlación centralizada de logs on-prem y nube. *(Splunk)*
+* **XDR (Detección Extendida):** Respuesta automatizada en endpoints. *(SentinelOne)*
+* **SOAR (Automatización):** Orquestación para reducir tiempos de respuesta.
+* **Resiliencia de Datos:** Backups inmutables contra Ransomware. *(Rubrik)*
 
-Just-in-Time (JIT) access y rotación de credenciales para administradores.
+---
 
-Soluciones Líderes: CyberArk, Delinea, BeyondTrust.
+## 📽️ Diapositiva 7: Hoja de Ruta
+### 📅 HOJA DE RUTA DE IMPLEMENTACIÓN 2026
 
-### Validación Continua (ZTNA):
+* **Q1 - VISIBILIDAD:** Inventario de activos y despliegue inicial de EDR.
+* **Q2 - HIGIENE:** MFA Global, Email Security y endurecimiento de Nube.
+* **Q3 - ZERO TRUST:** Micro-segmentación de red y acceso condicional.
+* **Q4 - OPTIMIZACIÓN:** Automatización SOAR y ejercicios de *Red Teaming*.
 
-Evaluar la postura del dispositivo antes de dar acceso, reemplazando VPNs tradicionales.
+---
 
-Soluciones Líderes: Zscaler Private Access, Palo Alto Prisma Access, Cloudflare One.
+## 📽️ Diapositiva 8: KPIs
+### 📈 MÉTRICAS DE ÉXITO
 
+* ✅ **100%** Cobertura de MFA en aplicaciones críticas.
+* ⏱️ **< 4h** Tiempo Medio de Respuesta (MTTR).
+* 🛡️ **95%** Aplicación de parches críticos en menos de 48h.
 
-## Título: Seguridad en Nube Híbrida (CNAPP)
-## Subtítulo: Gestión de postura y responsabilidad compartida
+---
 
-- CSPM (Cloud Security Posture Mgmt):
-
-Detección automática de errores de configuración multicloud.
-
-Soluciones Líderes: Wiz, Palo Alto Prisma Cloud, Orca Security.
-
-- Protección de Cargas (CWPP):
-
-Seguridad runtime para contenedores, Kubernetes y VMs.
-
-Soluciones Líderes: Sysdig, CrowdStrike Cloud Security, Microsoft Defender for Cloud.
-
-- Gestión de Secretos y Cifrado:
-
-Gestión de claves propias (BYOK) y secretos de aplicaciones.
-
-Soluciones Líderes: HashiCorp Vault, Thales CipherTrust.
-
-- DevSecOps (Código Seguro):
-
-Integrar seguridad desde el código (SAST/SCA).
-
-Soluciones Líderes: Snyk, GitHub Advanced Security, Checkmarx.
-
-
-
-## Título: Visibilidad y Respuesta
-## Subtítulo: Centro de Operaciones de Seguridad (SOC) Automatizado
-
-- SIEM Híbrido (Analítica de Datos):
-
-Correlación de logs de servidores locales y nube en una sola vista.
-
-Soluciones Líderes: Splunk Enterprise Security, Microsoft Sentinel (Cloud-Native), Google Chronicle.
-
-- XDR (Detección y Respuesta Extendida):
-
-Protección de endpoints y correlación automática de telemetría.
-
-Soluciones Líderes: CrowdStrike Falcon, SentinelOne Singularity, Palo Alto Cortex XDR.
-
-- Automatización (SOAR):
-
-Respuesta automática a incidentes (ej. aislar host infectado).
-
-Soluciones Líderes: Palo Alto Cortex XSOAR, Splunk SOAR.
-
-- Resiliencia y Recuperación (Anti-Ransomware):
-
-Backups inmutables aislados (Air-gapped) y recuperación instantánea.
-
-Soluciones Líderes: Rubrik, Veeam, Cohesity.
-
-## Hoja de Ruta (Roadmap)
-
-## Título: Plan de Ejecución a 12 Meses
-
-### Fase 1: Visibilidad (Mes 1-3)
-
-Inventario de activos, despliegue de EDR/XDR (ej. CrowdStrike) y auditoría de accesos.
-
-### Fase 2: Higiene & Identidad (Mes 4-6)
-
-Implementación total de MFA (ej. Entra ID), endurecimiento de nube con CSPM (ej. Wiz) y parches.
-
-### Fase 3: Zero Trust (Mes 7-9)
-
-Segmentación de redes (ej. Illumio) y políticas de acceso condicional.
-
-### Fase 4: Optimización (Mes 10-12)
-
-Automatización SOAR y simulacros de ataque (Red Teaming).
-
-## KPIs y Métricas
-
-## Título: Gobernanza y Medición del Éxito
-
-MTTD / MTTR: Tiempo medio para detectar y responder a incidentes.
-
-Cobertura de MFA: % de usuarios y administradores con doble factor.
-
-Puntaje de Riesgo (Risk Score): Calificación de postura de seguridad por unidad de negocio (visto en herramientas como Tenable o Qualys).
-
-SLA de Parches: Tiempo de remediación de vulnerabilidades críticas.
-
-
-
-
-## Mensajes Clave:
-
-La seguridad es un habilitador de negocio, no un freno.
-
-La nube híbrida requiere una estrategia unificada, no herramientas aisladas.
-
-El factor humano sigue siendo clave: Cultura de seguridad.
+## 📽️ Diapositiva 9: Conclusión
+> "La seguridad no es un freno para el negocio, es el habilitador que nos permite innovar con confianza en la nube híbrida."
+>
+> — **DEPARTAMENTO DE TECNOLOGÍA Y TRANSFORMACIÓN GFG**
