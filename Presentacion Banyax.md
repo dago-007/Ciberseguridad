@@ -52,7 +52,7 @@ Solución "as a Service" incluye hardware, software, implementación y operació
 
 ---
 
-## 4. Inversión Estratégica
+## Diapositiva 4: Inversión Estratégica
 Modelo de suscripción anual diseñado todo nuestro ecosistema en GFG (equipos, servidores, red, nube, AD)
 
 ### Resumen de Costos (USD)
